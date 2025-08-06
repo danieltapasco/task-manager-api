@@ -87,17 +87,7 @@ Para programar una tarea futura:
 
 POST /tasks/:id/schedule
 
-Esto agrega un trabajo a la cola `taskQueue`, que será procesado por un Worker:
-
-@Processor('taskQueue')
-export class TaskQueueProcessor {
-@Process('notify')
-async handleNotification(job: Job) {
-console.log(`🔔 Notificando sobre la tarea ${job.data.taskId}`);
-}
-}
-
----
+Esto agrega un trabajo a la cola `taskQueue`, que será procesado por el Worker TaskQueueProcessor
 
 ## Pruebas rápidas con curl
 
