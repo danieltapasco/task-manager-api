@@ -1,3 +1,0 @@
-MONGO_URI=mongodb://mongo:27017/taskmanager
-REDIS_HOST=redis
-REDIS_PORT=6379
