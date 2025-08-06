@@ -11,7 +11,7 @@ Microservicio RESTful para gestionar tareas. Construido con **NestJS**, **MongoD
 - **Documentación**: Swagger / OpenAPI
 - **Versión Node**: v20.18.0
 
-## 📦 Funcionalidades de la API
+## Funcionalidades de la API
 
 |Método|Endpoint|Descripción
 |`POST`|`/tasks`|Crear una nueva tarea
@@ -23,7 +23,7 @@ Microservicio RESTful para gestionar tareas. Construido con **NestJS**, **MongoD
 |`GET`|`/tasks/status/:status`|Obtener tareas por estado
 |`POST`|`/tasks/:id/schedule`| Programar una tarea asíncrono
 
-## 🧠 Campos de la Tarea
+## Campos de la Tarea
 
 json
 {
@@ -34,11 +34,11 @@ json
 "due_date": "ISO 8601 date (opcional)"
 }
 
-## ⚙️ Instalación (Modo local)
+## Instalación (Modo local)
 
 ### 1. Clonar repositorio
 
-git clone https://github.com/tuusuario/task-manager-api.git
+git clone https://github.com/danieltapasco/task-manager-api.git
 cd task-manager-api
 
 Si se está usando Docker, **no necesita ejecutarl manualmente npm install**, porque ya se ejecuta dentro del contenedor en el `Dockerfile`:
@@ -81,7 +81,7 @@ Incluye:
 - Esquemas de entrada y salida
 - Parametrización de rutas
 
-## 📬 Programar notificaciones con BullMQ
+## Programar notificaciones con BullMQ
 
 Para programar una tarea futura:
 
@@ -99,7 +99,7 @@ console.log(`🔔 Notificando sobre la tarea ${job.data.taskId}`);
 
 ---
 
-## 🧪 Pruebas rápidas con curl
+## Pruebas rápidas con curl
 
 ## Crear una nueva tarea
 
