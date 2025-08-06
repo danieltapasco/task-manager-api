@@ -5,6 +5,6 @@ import type { Job } from 'bull';
 export class TaskQueueProcessor {
   @Process('notify')
   handleNotification(job: Job) {
-    console.log(`🔔 Notificando sobre la tarea ${job.data.taskId}`);
+    console.log(`Notificando sobre la tarea ${job.data.taskId}`);
   }
 }
