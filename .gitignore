@@ -1,0 +1,63 @@
+# Build output
+/dist
+/build
+
+# Node modules
+/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Test coverage
+/coverage
+/.nyc_output
+
+# Editor/IDE configs
+/.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
+*.launch
+.project
+.classpath
+.settings/
+.c9/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Runtime files
+/temp
+/tmp
+.temp
+.tmp
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports (Node.js)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+#  Docker artifacts
+docker-compose.override.yml
+*.tgz
+
+# Optional: Swagger/OpenAPI generated files (if any)
+swagger.json
+swagger.yaml
