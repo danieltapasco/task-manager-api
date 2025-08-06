@@ -1,9 +1,7 @@
-# Build output
+# compiled output
 /dist
-/build
-
-# Node modules
 /node_modules
+/build
 
 # Logs
 logs
@@ -14,50 +12,45 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# Test coverage
+# OS
+.DS_Store
+
+# Tests
 /coverage
 /.nyc_output
 
-# Editor/IDE configs
+# IDEs and editors
 /.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.sublime-workspace
-*.launch
-.project
-.classpath
-.settings/
-.c9/
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# Env files
+# dotenv environment variable files
 .env
+.env.development.local
+.env.test.local
+.env.production.local
 .env.local
-.env.*.local
 
-# Runtime files
-/temp
-/tmp
+# temp directory
 .temp
 .tmp
+
+# Runtime data
 pids
 *.pid
 *.seed
 *.pid.lock
 
-# Diagnostic reports (Node.js)
+# Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-#  Docker artifacts
-docker-compose.override.yml
-*.tgz
-
-# Optional: Swagger/OpenAPI generated files (if any)
-swagger.json
-swagger.yaml
